@@ -92,7 +92,7 @@ const ProductList: React.FC<{ navigation: any }> = ({ navigation }) => {
     };
 
     const handleAddToCart = (product: any) => {
-        // Implement your logic for adding the product to the cart here
+        // logic if needed.
     };
 
     const handleTabPress = (tabIndex: any) => {
@@ -101,7 +101,6 @@ const ProductList: React.FC<{ navigation: any }> = ({ navigation }) => {
 
     return (
         <View style={{ flex: 1 }}>
-            {/* Header */}
             <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', padding: 10, marginTop: '3%', marginHorizontal: 10 }}>
                 <View style={{ flexDirection: 'row', alignItems: 'center' }}>
                     <TouchableOpacity onPress={() => navigation.goBack()}>
@@ -121,8 +120,6 @@ const ProductList: React.FC<{ navigation: any }> = ({ navigation }) => {
                 </TouchableOpacity>
             </View>
 
-
-            {/* Custom "Tabs" */}
             <View style={{ flexDirection: 'row', justifyContent: 'space-around', marginVertical: 20 }}>
                 <TouchableOpacity onPress={() => handleTabPress(0)}>
                     <Image source={require('..//images/bread1.png')} style={{ width: 40, height: 40, alignSelf: 'center' }} />
